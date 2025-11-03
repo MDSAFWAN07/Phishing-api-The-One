@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": "Phishing Detection API",
+        "_postman_id": "abcd1234-5678-efgh-ijkl-1234567890",
+        "description": "Collection for testing Phishing Detection API hosted on Render",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Predict Phishing URL",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\\n    \\\"url\\\": \\\"http://paypal-login-update.com/verify\\\"\\n}"
+                },
+                "url": {
+                    "raw": "https://your-render-url.onrender.com/predict",
+                    "protocol": "https",
+                    "host": [
+                        "your-render-url",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "predict"
+                    ]
+                }
+            }
+        }
+    ]
+}
